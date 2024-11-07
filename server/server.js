@@ -32,7 +32,7 @@ app.post('/gemini', async (req, res) => {
 
     const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"})
 
-    const response = await fileManager.uploadFile("test.html", {
+    const response = await fileManager.uploadFile("vlr_page.html", {
         mimeType: "text/html",
         displayName: "Requested Web Page",
     })

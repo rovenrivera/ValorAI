@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+::-webkit-scrollbar-thumb {
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+p {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.search-section {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result {
+  overflow: hidden;
+}
+
+.result-box {
+  border: 5px solid #981b1b;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.676) 0 2px 4px;
+  width: 80vw;
+  height: 70vh;
+  margin-bottom: 10px;
+  background-color: #000000bf;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.result-box p {
+  color: rgb(255, 255, 255);
+}
+
+.result-box .emptyText {
+  color: #ffffff;
+  padding: 20px 30px;
+}
+
+.result-box ul {
+  margin-top: auto;
+  padding: 0px 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.answerDivider {
+  margin: 25px 10px 25px 10px;
+  border: 0.5px solid #fff;
+}
+
+.input-container {
+  border: 5px solid #981b1b;
+  background-color: #0f0f0f00;
+  width: 80vw;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.676) 0 2px 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.input-container input {
+  background-color: #000000bf;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+  font-weight: 200;
+  width: 100%;
+}
+
+.input-container input::placeholder {
+  color: #ffffff48;
+  font-weight: 200;
+}
+
+.input-container input:focus {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.input-container button {
+  border: none;
+  padding: 10px;
+  background-color: #000000bf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #981b1b;
+}
+
+.input-container button:active {
+  background-color: #981b1b96;
+}
+
+.loadingText,
+.errorMessage {
+  color: #ffffff6e;
+  padding: 10px 60px;
+}
+
+@keyframes add-response {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+.valor-responses {
+  animation-name: add-response;
+  animation-duration: 1s;
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
 }

@@ -22,7 +22,7 @@ app.post('/gemini', async (req, res) => {
         },
     })
 
-    fs.writeFileSync('./vlr_page.html', upload.data, err => {
+    fs.writeFileSync('server/vlr_page.html', upload.data, err => {
         if (err) {
             console.log("Error")
         }
@@ -32,7 +32,7 @@ app.post('/gemini', async (req, res) => {
 
     const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"})
 
-    const response = await fileManager.uploadFile("./vlr_page.html", {
+    const response = await fileManager.uploadFile("server/vlr_page.html", {
         mimeType: "text/html",
         displayName: "Requested Web Page",
     })

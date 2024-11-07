@@ -1,7 +1,7 @@
 {
-  "homepage": "https://master.d1c8fqlbz44jg3.amplifyapp.com/",
+  "homepage": "",
   "name": "frontend",
-  "proxy": "http://localhost:8000",
+  "proxy": "https://valorai-server.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,8 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:frontend": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

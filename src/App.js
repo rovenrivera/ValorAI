@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import "./index.css";
 
+//APP
 const App = () => {
   const [value, setValue] = useState("");
   const [answer, setAnswer] = useState("");

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/valorai/static/css/main.36ce87a3.css",
+    "main.js": "/valorai/static/js/main.b5c2dc00.js",
+    "static/media/valorai.png": "/valorai/static/media/valorai.39d060586ecfe5a4898f.png",
+    "index.html": "/valorai/index.html",
+    "main.36ce87a3.css.map": "/valorai/static/css/main.36ce87a3.css.map",
+    "main.b5c2dc00.js.map": "/valorai/static/js/main.b5c2dc00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36ce87a3.css",
+    "static/js/main.b5c2dc00.js"
+  ]
+}

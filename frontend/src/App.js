@@ -41,7 +41,7 @@ const App = () => {
           "Content-Type": "application/json",
         },
       };
-      const response = await fetch("https://valorai-server.onrender.com/gemini", options);
+      const response = await fetch("https://54.153.38.44/gemini", options);
       const data = await response.text();
       setAnswer(data);
       setValue("");

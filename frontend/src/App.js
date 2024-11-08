@@ -41,7 +41,7 @@ const App = () => {
           "Content-Type": "application/json",
         },
       };
-      const response = await fetch("https://54.153.38.44/gemini", options);
+      const response = await fetch("https://ec2-54-153-38-44.us-west-1.compute.amazonaws.com/gemini", options);
       const data = await response.text();
       setAnswer(data);
       setValue("");
